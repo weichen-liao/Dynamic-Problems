@@ -1,0 +1,28 @@
+
+
+动态规划算法的有效性依赖于问题本身所具有的两个重要性质：最优子结构性质和子问题重叠性质。
+1、最优子结构：当问题的最优解包含了其子问题的最优解时，称该问题具有最优子结构性质。
+2、重叠子问题：在用递归算法自顶向下解问题时，每次产生的子问题并不总是新问题，有些子问题被反复计算多次。动态规划算法正是利用了这种子问题的重叠性质，对每一个子问题只解一次，而后将其解保存在一个表格中，在以后尽可能多地利用这些子问题的解。（二）、动态规划算法的基本步骤设计一个标准的动态规划算法，通常可按以下几个步骤进行：
+
+1.划分阶段：按照问题的时间或空间特征，把问题分为若干个阶段。注意这若干个阶段一定要是有序的或者是可排序的（即无后向性），否则问题就无法用动态规划求解。
+
+2.选择状态：将问题发展到各个阶段时所处于的各种客观情况用不同的状态表示出来。当然，状态的选择要满足无后效性。
+
+3.确定决策并写出状态转移方程：之所以把这两步放在一起，是因为决策和状态转移有着天然的联系，状态转移就是根据上一阶段的状态和决策来导出本阶段的状态。所以，如果我们确定了决策，状态转移方程也就写出来了。但事实上，我们常常是反过来做，根据相邻两段的各状态之间的关系来确定决策。
+
+4.写出规划方程（包括边界条件）：动态规划的基本方程是规划方程的通用形式化表达式。一般说来，只要阶段、状态、决策和状态转移确定了，这一步还是比较简单的。
+
+
+
+
+The effectiveness of the dynamic programming algorithm depends on two important properties of the problem itself: the optimal sub-structure property and the overlapping sub-problem.
+1. Optimal substructure: When the optimal solution of a problem includes the optimal solution of its subproblems, the problem is said to have the property of optimal substructure.
+2. Overlapping sub-problems: When solving the problem from top to bottom using the recursive algorithm, the sub-problems generated each time are not always new problems, and some sub-problems are repeatedly calculated many times. The dynamic programming algorithm takes advantage of the overlapping nature of this sub-problem. It solves each sub-problem only once, and then saves its solution in a table, and uses the solutions of these sub-problems as much as possible in the future. (2) Basic steps of dynamic programming algorithm Design a standard dynamic programming algorithm, usually according to the following steps:
+
+1. Divide the stage: According to the time or space characteristics of the problem, divide the problem into several stages. Note that these stages must be orderly or sortable (that is, no backwards), otherwise the problem cannot be solved by dynamic programming.
+
+2. Selection state: the various objective situations in which the problem develops to various stages are expressed in different states. Of course, the choice of state must satisfy no aftereffect.
+
+3. Determine the decision and write the state transition equation: The reason why these two steps are put together is that decision-making and state transition are naturally related, and state transition is to derive the state of this stage based on the state and decision of the previous stage. Therefore, if we make a decision, the state transition equation is also written. But in fact, we often do it the other way around and make decisions based on the relationship between the states of two adjacent segments.
+
+4. Write the planning equation (including boundary conditions): The basic equation of dynamic programming is a general formal expression of the planning equation. Generally speaking, as long as the stage, state, decision and state transition are determined, this step is relatively simple.
